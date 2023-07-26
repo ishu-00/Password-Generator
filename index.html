@@ -13,9 +13,12 @@
         <h1>Generate a <br><span>Random Password</span></h1>
         <div class="display">
             <input type="text" id="password" placeholder="Password">
-            <i class="fas fa-copy"></i>
+            <i class="fas fa-copy" onclick="copyPassword()"></i>
         </div>
-        <button><img src="generate.png"> Generate Password</button>
+        <div class="buttons">
+            <button onclick="createPassword()" id="btn1"><img src="generate.png"> Generate Password</button>
+            <button onclick="clearPassword()" id="btn2">Clear</button>
+        </div>
     </div>
     
 </body>

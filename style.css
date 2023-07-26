@@ -22,7 +22,7 @@ body {
     font-size: 45px;
 }
 
-.container h1 span {
+.container span {
     color: #664a66;
     border-bottom: 4px solid #3b253b;
     padding-bottom: 7px;
@@ -61,12 +61,19 @@ body {
     font-size: 22px;
 }
 
-.container button img {
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.buttons button img {
     width: 30px;
     margin-right: 3px;
 }
 
-.container button {
+.buttons button {
     border: none;
     outline: none;
     color: #fff;
@@ -83,7 +90,39 @@ body {
     transition: all 0.2s ease;
 }
 
-.container button:hover {
+.buttons button:hover {
     background: #664a66;
     transform: scale(1.08);
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 82%;
+        margin: 8%;
+    }
+
+    .container h1 span{
+border-bottom: none;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    #btn1, #btn2{
+        display: block;
+        margin: 8px;
+        align-items: center;
+    }
+    
+    .buttons button img {
+        width: 18px;
+        margin-right: 1.5px;
+    }
 }
